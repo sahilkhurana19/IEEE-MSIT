@@ -1,4 +1,5 @@
 body {
+	padding-top: 1em;
 	height: 100%;
 	overflow-y: scroll;
 }
@@ -52,6 +53,10 @@ label.active {
 	display: inline;
 }
 
+#blog-content {
+	color: black;
+}
+
 .card .card-title {
 	font-size: 0.8em;
 }
@@ -64,11 +69,42 @@ label.active {
 #blogsheading {
 	color: #006699;
 	font-weight: bold;
-	margin-bottom: -1em;
+	margin-bottom: -0.5em;
+}
+
+#card-read-more {
+	text-align: right;
+	color: #006699;
+}
+
+#card-date {
+	text-align: left;
+	color: #006699;
+	margin-top: -1.7em;
+	padding-bottom: 2em;
+	position: absolute;
+}
+
+#blog-image {
+	margin-right: -1em;
+	height: 16em;
+}
+
+.card .card-action {
+	padding: 0 20px 0 0;
 }
 
 li h4 {
-	padding-bottom: 1em;
+	padding-bottom: 0em;
+}
+
+#latest-news {
+	text-align: center;
+	margin-right: 0.5em;
+}
+
+#button {
+	padding-top: 2em;
 }
 
 .tabs-wrapper li {
