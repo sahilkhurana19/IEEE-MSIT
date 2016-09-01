@@ -9,10 +9,96 @@
 	<!-- Compiled and minified CSS -->
   	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
 	<link rel="stylesheet" type="text/css" href="css/index.css">
-
+	
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 
 </head>
-<body class="container">
+<body>
+<header>
+	<div class="container" id="sidebar">
+		<a href="#" data-activates="nav-mobile" class="button-collapse top-nav waves-effect waves-light circle hide-on-large-only">
+			<i class="material-icons">menu</i>
+		</a>
+	</div>
+	<ul id="nav-mobile" class="side-nav fixed">
+	<li class="logo">
+		<a id="logo-container" href="#" class="brand-logo">
+			<img src="images/ieee_msit.png" class="responsive-img">
+		</a>
+	</li>
+	<li class="search">
+	<form>
+		<div class="input-field card">
+			<input id="search" type="search" required>
+			<label for="search"><i class="material-icons">search</i></label>
+			<i class="material-icons" id="close">close</i>
+		</div>
+	</form>
+	</li>
+	<li class="bold">
+		<a href="#" class="waves-effect">About IEEE MSIT</a>		
+	</li>
+	<li class="bold">
+		<a href="#" class="waves-effect">Events</a>		
+	</li>
+	<li class="bold">
+		<a href="#" class="waves-effect">Special Interest Groups</a>		
+	</li>
+	<li class="bold">
+		<a href="#" class="waves-effect">Computer Society</a>		
+	</li>
+	<li class="bold">
+		<a href="#" class="waves-effect">MTTS</a>		
+	</li>
+	<li class="bold">
+		<a href="#" class="waves-effect">PES</a>		
+	</li>
+	<li class="bold">
+		<a href="#" class="waves-effect">Women in Engineering</a>		
+	</li>
+	<li class="bold">
+		<a href="#" class="waves-effect">Our Team</a>		
+	</li>
+	<li class="bold">
+		<a href="#" class="waves-effect">Contact Us</a>		
+	</li>
+	<li class="bold">
+		<ul id="powerstuff">
+		<li>
+			<span id="powerlogo">Powered by:</span>
+		</li>
+		<li>
+			<img src="images/IEEE_advancing_humanity.png" id="humanityimg" class="responsive-img">		
+		</li>
+		</ul>
+	</li>
+	</ul>
 
+</header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<script   src="https://code.jquery.com/jquery-2.2.4.js"   integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="   crossorigin="anonymous"></script>
+	 <!-- Compiled and minified JavaScript -->
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+          
+	<script type="text/javascript">
+		$(".button-collapse").sideNav();
+	</script>
 </body>
 </html>

@@ -1,5 +1,52 @@
 body {
 	height: 100%;
-	overflow-x: hidden !important;
 	overflow-y: scroll;
+}
+
+ul.side-nav.fixed {
+	overflow: auto;
+}
+
+ul.side-nav.fixed::-webkit-scrollbar {
+	width: 0 !important;
+}
+.search {
+	margin-top: 5em;
+	margin-bottom: 2em;
+}
+
+
+label {
+	margin-top: -0.3em;
+}
+
+label.active {
+	margin-top: 5.3em;
+}
+
+#close {
+	margin-top: 0.20em;
+}
+
+.logo {
+	text-align: center;
+	margin-top: 1em;
+}
+
+#powerlogo {
+	color: #006699;
+	z-index: 1;
+	font-weight: bold;
+	padding-left: 16px;
+	margin-top: -1em;
+}
+
+#humanityimg {
+	z-index: -1;
+	margin: 1em 1em 0;
+	max-width: 50%;
+}
+
+#powerstuff{
+	display: inline;
 }
