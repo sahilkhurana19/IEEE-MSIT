@@ -3,6 +3,7 @@ body {
 	overflow-y: scroll;
 }
 
+
 ul.side-nav.fixed {
 	overflow: auto;
 }
@@ -49,4 +50,16 @@ label.active {
 
 #powerstuff{
 	display: inline;
+}
+
+.pin-top {
+	position: fixed;
+}
+
+.pin-bottom {
+	position: fixed;
+}
+
+.pinned {
+	position: fixed !important;
 }
