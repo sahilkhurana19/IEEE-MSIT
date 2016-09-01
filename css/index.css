@@ -52,14 +52,41 @@ label.active {
 	display: inline;
 }
 
+.card .card-title {
+	font-size: 0.8em;
+}
+
+.card .card-content {
+	font-size: 1em;
+	color: #006699;
+}
+
+#blogsheading {
+	color: #006699;
+	font-weight: bold;
+	margin-bottom: -1em;
+}
+
+li h4 {
+	padding-bottom: 1em;
+}
+
+.tabs-wrapper li {
+	padding-bottom: 1em;
+}
+
 .pin-top {
 	position: fixed;
 }
 
 .pin-bottom {
-	position: fixed;
+	position: relative;
 }
 
 .pinned {
 	position: fixed !important;
+}
+
+.tabs-wrapper {
+	color: #006699;
 }
