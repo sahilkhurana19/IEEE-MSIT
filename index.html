@@ -83,45 +83,73 @@
 				<div class="col m3 l3 s6">
 					<div class="card">
 						<div class="card-image">
-							<img src="images/sample-1.jpg">
+							<img src="images/sample-1.jpg" class="modal-trigger" href="#Modal" id="whatIeee">
 							<span class="card-title">Card Title</span>
 						</div>
 						<div class="card-content">
 							<p>What is IEEE?</p>
 						</div>
 					</div>
+					<!--div id="whatModal" class="modal bottom-sheet">
+						<div class="modal-content" id="someid">
+							<!--h4>What is IEEE</h4>
+							<p>Information</p>
+						</div>
+					</div-->
 				</div>
 				<div class="col m3 l3 s6">
 					<div class="card">
 						<div class="card-image">
-							<img src="images/sample-1.jpg">
+							<img src="images/sample-1.jpg" class="modal-trigger" href="#Modal" id="whyIeee">
 							<span class="card-title">Card Title</span>
 						</div>
 						<div class="card-content">
 							<p>Why join IEEE?</p>
 						</div>
 					</div>
+					<!--div id="whyModal" class="modal bottom-sheet">
+						<div class="modal-content">
+							<h4>Why join IEEE</h4>
+							<p>Information</p>
+						</div>
+					</div-->
 				</div>
 				<div class="col m3 l3 s6">
 					<div class="card">
 						<div class="card-image">
-							<img src="images/sample-1.jpg">
+							<img src="images/sample-1.jpg" class="modal-trigger" href="#Modal" id="benefitIeee">
 							<span class="card-title">Card Title</span>
 						</div>
 						<div class="card-content">
 							<p>Benefits</p>
 						</div>
 					</div>
+					<!--div id="benefitModal" class="modal bottom-sheet">
+						<div class="modal-content">
+							<h4>Benefits of IEEE</h4>
+							<p>Information</p>
+						</div>
+					</div-->
 				</div>
 				<div class="col m3 l3 s6">
 					<div class="card">
 						<div class="card-image">
-							<img src="images/sample-1.jpg" class="responsive-img">
+							<img src="images/sample-1.jpg" class="responsive-img modal-trigger" href="#Modal" id="resourceIeee">
 							<span class="card-title">Card Title</span>
 						</div>
 						<div class="card-content">
 							<p>Resources</p>
 						</div>
+					</div>
+					<!--div id="resourceModal" class="modal bottom-sheet">
+						<div class="modal-content" id="">
+							<h4>IEEE Resources</h4>
+							<p>Information</p>
+						</div>
+					</div-->
+				</div>
+				<div id="Modal" class="modal bottom-sheet">
+					<div class="modal-content" id="modalContent">
 					</div>
 				</div>
 			</div>
@@ -253,8 +281,10 @@
 	<script   src="https://code.jquery.com/jquery-2.2.4.js"   integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="   crossorigin="anonymous"></script>
 	 <!-- Compiled and minified JavaScript -->
   	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
-          
+    <script type="text/javascript" src="js/main.js"></script>      
 	<script>
+    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+    	$('.modal-trigger').leanModal();
     	$('.tabs-wrapper').pushpin({ top: $('.tabs-wrapper').offset().top });        
   		$(".button-collapse").sideNav();
 		
