@@ -94,8 +94,29 @@ label.active {
 	padding: 0 20px 0 0;
 }
 
-li h4 {
+li h5 {
 	padding-bottom: 0em;
+}
+
+.microsoft .marquee {
+	padding: 0 1em;
+	margin: 0;
+}
+.marquee {
+    top: 6em;
+    position: relative;
+    box-sizing: border-box;
+    animation: marquee 15s linear infinite;
+}
+
+.marquee:hover {
+    animation-play-state: paused;
+}
+
+/* Make it move! */
+@keyframes marquee {
+    0%   { top:   12em }
+    100% { top: -16em }
 }
 
 #latest-news {
@@ -106,6 +127,9 @@ li h4 {
 #button {
 	padding-top: 2em;
 }
+/*CSS for pushpin*/
+
+
 
 .tabs-wrapper li {
 	padding-bottom: 1em;
