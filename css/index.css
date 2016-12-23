@@ -115,8 +115,8 @@ li h5 {
 
 /* Make it move! */
 @keyframes marquee {
-    0%   { top:   12em }
-    100% { top: -16em }
+    0%   { top:   45em }
+    100% { top: -38em }
 }
 
 #latest-news {
