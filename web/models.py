@@ -16,3 +16,10 @@ class Post(models.Model):
 
     def __unicode__(self):
         return "%s" % (self.title)    
+
+class Ticker(models.Model):
+    content = models.CharField(max_length = 200)
+    visible = models.BooleanField(default = True)
+
+    def __unicode__(self):
+        return "%s" % (self.content)
