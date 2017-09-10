@@ -2,7 +2,7 @@
 from __future__ import unicode_literals
 
 from django.contrib import admin
-from .models import Post, Ticker
+from .models import Post, Ticker, leftNavigation, topNavigation, Execom
 # Register your models here.
 
 class PostAdmin(admin.ModelAdmin):
@@ -13,3 +13,6 @@ class PostAdmin(admin.ModelAdmin):
 
 admin.site.register(Post, PostAdmin)
 admin.site.register(Ticker)
+admin.site.register(leftNavigation)
+admin.site.register(topNavigation)
+admin.site.register(Execom)

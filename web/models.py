@@ -23,3 +23,14 @@ class Ticker(models.Model):
 
     def __unicode__(self):
         return "%s" % (self.content)
+
+class leftNavigation(models.Model):
+    title = models.CharField(max_length = 100)
+    link = models.URLField(max_length = 100)
+
+class topNavigation(models.Model):
+    title = models.CharField(max_length = 100)
+
+class Execom(models.Model):
+    chapter = models.CharField(max_length = 100)
+    name = models.CharField(max_length = 100)
